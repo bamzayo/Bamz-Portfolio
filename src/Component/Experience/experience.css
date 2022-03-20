@@ -1,0 +1,82 @@
+.experience__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.experience__container h3 {
+  color: var(--color-primary);
+  /* font-family: 'Roboto', sans-serif;
+  font-weight: 300; */
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.experience__container .experience__frontend {
+  background-color: transparent;
+  border: 0.8px solid var(--color-primary-variant);
+  padding: 2rem 4rem;
+  border-radius: 2rem;
+  transition: var(--main-transition);
+}
+
+.experience__container .experience__backend {
+  background-color: var(--color-bg-variant);
+  border: 0.8px solid transparent;
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+  transition: var(--main-transition);
+}
+.experience__container .experience__frontend:hover,
+.experience__container .experience__backend:hover {
+  background-color: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.experience__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 0.5rem;
+  justify-items: flex-start;
+}
+
+.experience__details {
+  display: flex;
+  /* justify-content: flex-start;
+  align-items: flex-start; */
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.experience__icon {
+  margin-top: 0.4rem;
+  color: var(--color-primary);
+}
+
+/* .experience__details h4 {
+  margin-top: 0;
+} */
+
+/* Tablet (Medium Devices) */
+@media screen and (max-width: 1024px) {
+  .experience__container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width: 75%;
+    margin: auto;
+  }
+  /* section {
+    height: 100%;
+  } */
+}
+/* Tablet (Small Devices) */
+@media screen and (max-width: 600px) {
+  .experience__container {
+    gap: 1rem;
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+  .experience__container div {
+    width: 90%;
+  }
+}
